@@ -34,7 +34,7 @@ steps:
 
 # Step 6: Generate the LivingDoc HTML report
 - script: |
-    livingdoc test-assembly bin/Debug/net6.0/MySpecFlowProject.Tests.dll -t TestResults/<timestamp>.trx
+    livingdoc test-assembly bin/Debug/net8.0/Shouty.Specs.dll -t TestResults/<timestamp>.trx
   displayName: 'Generate LivingDoc Report'
 
 # Step 7: Publish the LivingDoc HTML report as an artifact
