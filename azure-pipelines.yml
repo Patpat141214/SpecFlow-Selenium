@@ -34,6 +34,15 @@ steps:
 
 # Step 6: Generate the LivingDoc HTML report
 - script: |
+    dotnet clean $(Build.SourcesDirectory)/Shouty.Specs
+    dotnet build $(Build.SourcesDirectory)/Shouty.Specs --configuration Debug
+  displayName: 'Clean and Build Shouty.Specs'
+
+- script: |
+    livingdoc test-assembly $(Build.SourcesDirectory)/Shouty.Specs/bin/Debug/net8.0/Shouty.Specs.dll -t $(Build.ArtifactStagingDirectory)/TestResults/$(Build.BuildId).trx
+  displayName: 'Generate LivingDoc Report'
+
+- script: |
     echo "Listing files in Shouty.Specs/bin/Debug/net8.0/"
     dir $(Build.SourcesDirectory)/Shouty.Specs/bin/Debug/net8.0/
   displayName: 'Verify DLL Location'
