@@ -9,7 +9,7 @@ namespace Shouty.Specs.StepDefinitions
         private Person lucy = new Person();
         private Person sean = new Person();
 
-        private string messageFromSean;
+        private string ?messageFromSean;
 
         [Given("Lucy is located {int}m from Sean")]
         public void GivenLucyIsLocatedMFromSean(int distance)

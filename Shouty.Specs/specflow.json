@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    {
+      "name": "SpecFlow.Plus.LivingDocPlugin",
+      "parameters": {
+        "enableTraceability": "true"
+      }
+    }
+  ]
+}
