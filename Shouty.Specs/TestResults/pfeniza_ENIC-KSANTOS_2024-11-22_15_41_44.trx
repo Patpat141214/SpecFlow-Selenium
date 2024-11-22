@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="6d236b01-2140-43ee-ba25-629df83c5758" name="pfeniza@ENIC-KSANTOS 2024-11-22 15:41:44" runUser="EUROGROUP\pfeniza" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-11-22T15:41:44.8905108+08:00" queuing="2024-11-22T15:41:44.8905118+08:00" start="2024-11-22T15:41:42.9646953+08:00" finish="2024-11-22T15:41:58.4963167+08:00" />
+  <TestSettings name="default" id="9559d9e8-a727-47cc-b35e-8332e961eea4">
+    <Deployment runDeploymentRoot="pfeniza_ENIC-KSANTOS_2024-11-22_15_41_44" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="d492f578-47d0-4e5e-b86d-11dd5094cab3" testId="0704576c-9ffc-c479-80c2-4e51caf83180" testName="Listener is different distance and shouts" computerName="ENIC-KSANTOS" duration="00:00:00.0015759" startTime="2024-11-22T15:41:43.6445511+08:00" endTime="2024-11-22T15:41:43.6445512+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d492f578-47d0-4e5e-b86d-11dd5094cab3">
+      <Output>
+        <StdOut>Given Lucy is located 30m from Sean&#xD;
+-&gt; done: StepDefinitions.GivenLucyIsLocatedMFromSean(30) (0.0s)&#xD;
+When Sean shouts "Free keyboard"&#xD;
+-&gt; done: StepDefinitions.WhenSeanShouts("Free keyboard") (0.0s)&#xD;
+Then Lucy hears Sean's message&#xD;
+-&gt; done: StepDefinitions.ThenLucyHearsSeansMessage() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="91cee868-00d1-4127-9062-ca50f557cadb" testId="d65a7516-b1e8-5e9d-df59-e53ef51813ce" testName="Invalid login" computerName="ENIC-KSANTOS" duration="00:00:06.6040930" startTime="2024-11-22T15:41:58.4443342+08:00" endTime="2024-11-22T15:41:58.4443344+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91cee868-00d1-4127-9062-ca50f557cadb">
+      <Output>
+        <StdOut>Given the user is on the login page&#xD;
+-&gt; done: LoginStepDefinitions.GivenTheUserIsOnTheLoginPage() (2.1s)&#xD;
+When the user enters invalid credentials&#xD;
+-&gt; done: LoginStepDefinitions.WhenTheUserEntersInvalidCredentials() (2.2s)&#xD;
+Then an error message should be displayed&#xD;
+-&gt; done: LoginStepDefinitions.ThenAnErrorMessageShouldBeDisplayed() (2.3s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4a851495-7b0e-4e05-b577-b776f5b02049" testId="d982732d-f4fa-75e6-915f-246d294c8c6f" testName="Successful login" computerName="ENIC-KSANTOS" duration="00:00:08.2601364" startTime="2024-11-22T15:41:51.8401023+08:00" endTime="2024-11-22T15:41:51.8401027+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a851495-7b0e-4e05-b577-b776f5b02049">
+      <Output>
+        <StdOut>Given the user is on the login page&#xD;
+-&gt; done: LoginStepDefinitions.GivenTheUserIsOnTheLoginPage() (2.7s)&#xD;
+When the user enters valid credentials&#xD;
+-&gt; done: LoginStepDefinitions.WhenTheUserEntersValidCredentials() (2.3s)&#xD;
+Then the user should be redirected to the homepage&#xD;
+-&gt; done: LoginStepDefinitions.ThenTheUserShouldBeRedirectedToTheHomepage() (3.2s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="967474f0-a852-4c50-a39e-9661b53da339" testId="00fcb6b2-4352-bf5a-43cb-c5d182e621f8" testName="Listener is within range" computerName="ENIC-KSANTOS" duration="00:00:00.0004357" startTime="2024-11-22T15:41:43.6448154+08:00" endTime="2024-11-22T15:41:43.6448154+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="967474f0-a852-4c50-a39e-9661b53da339">
+      <Output>
+        <StdOut>Given Lucy is located 15m from Sean&#xD;
+-&gt; done: StepDefinitions.GivenLucyIsLocatedMFromSean(15) (0.0s)&#xD;
+When Sean shouts "free bagels at Sean's"&#xD;
+-&gt; done: StepDefinitions.WhenSeanShouts("free bagels at Se...") (0.0s)&#xD;
+Then Lucy hears Sean's message&#xD;
+-&gt; done: StepDefinitions.ThenLucyHearsSeansMessage() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="88afbbec-4a80-4cb4-b40a-28714e1b87d9" testId="87afea6e-a1b8-f0da-0ad3-36c8330eda7d" testName="Listener hears a different message" computerName="ENIC-KSANTOS" duration="00:00:00.0583199" startTime="2024-11-22T15:41:43.6409763+08:00" endTime="2024-11-22T15:41:43.6409955+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88afbbec-4a80-4cb4-b40a-28714e1b87d9">
+      <Output>
+        <StdOut>Given Lucy is located 15m from Sean&#xD;
+-&gt; done: StepDefinitions.GivenLucyIsLocatedMFromSean(15) (0.0s)&#xD;
+When Sean shouts "Free Coffee!"&#xD;
+-&gt; done: StepDefinitions.WhenSeanShouts("Free Coffee!") (0.0s)&#xD;
+Then Lucy hears Sean's message&#xD;
+-&gt; done: StepDefinitions.ThenLucyHearsSeansMessage() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Invalid login" storage="c:\users\pfeniza\source\repos\patpat141214\specflow-selenium\shouty.specs\bin\debug\net8.0\shouty.specs.dll" id="d65a7516-b1e8-5e9d-df59-e53ef51813ce">
+      <Execution id="91cee868-00d1-4127-9062-ca50f557cadb" />
+      <TestMethod codeBase="C:\Users\pfeniza\source\repos\Patpat141214\SpecFlow-Selenium\Shouty.Specs\bin\Debug\net8.0\Shouty.Specs.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Shouty.Specs.Features.LoginFeature" name="InvalidLogin" />
+    </UnitTest>
+    <UnitTest name="Listener is different distance and shouts" storage="c:\users\pfeniza\source\repos\patpat141214\specflow-selenium\shouty.specs\bin\debug\net8.0\shouty.specs.dll" id="0704576c-9ffc-c479-80c2-4e51caf83180">
+      <Execution id="d492f578-47d0-4e5e-b86d-11dd5094cab3" />
+      <TestMethod codeBase="C:\Users\pfeniza\source\repos\Patpat141214\SpecFlow-Selenium\Shouty.Specs\bin\Debug\net8.0\Shouty.Specs.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Shouty.Specs.Features.HearShoutFeature" name="ListenerIsDifferentDistanceAndShouts" />
+    </UnitTest>
+    <UnitTest name="Successful login" storage="c:\users\pfeniza\source\repos\patpat141214\specflow-selenium\shouty.specs\bin\debug\net8.0\shouty.specs.dll" id="d982732d-f4fa-75e6-915f-246d294c8c6f">
+      <Execution id="4a851495-7b0e-4e05-b577-b776f5b02049" />
+      <TestMethod codeBase="C:\Users\pfeniza\source\repos\Patpat141214\SpecFlow-Selenium\Shouty.Specs\bin\Debug\net8.0\Shouty.Specs.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Shouty.Specs.Features.LoginFeature" name="SuccessfulLogin" />
+    </UnitTest>
+    <UnitTest name="Listener hears a different message" storage="c:\users\pfeniza\source\repos\patpat141214\specflow-selenium\shouty.specs\bin\debug\net8.0\shouty.specs.dll" id="87afea6e-a1b8-f0da-0ad3-36c8330eda7d">
+      <Execution id="88afbbec-4a80-4cb4-b40a-28714e1b87d9" />
+      <TestMethod codeBase="C:\Users\pfeniza\source\repos\Patpat141214\SpecFlow-Selenium\Shouty.Specs\bin\Debug\net8.0\Shouty.Specs.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Shouty.Specs.Features.HearShoutFeature" name="ListenerHearsADifferentMessage" />
+    </UnitTest>
+    <UnitTest name="Listener is within range" storage="c:\users\pfeniza\source\repos\patpat141214\specflow-selenium\shouty.specs\bin\debug\net8.0\shouty.specs.dll" id="00fcb6b2-4352-bf5a-43cb-c5d182e621f8">
+      <Execution id="967474f0-a852-4c50-a39e-9661b53da339" />
+      <TestMethod codeBase="C:\Users\pfeniza\source\repos\Patpat141214\SpecFlow-Selenium\Shouty.Specs\bin\Debug\net8.0\Shouty.Specs.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Shouty.Specs.Features.HearShoutFeature" name="ListenerIsWithinRange" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="0704576c-9ffc-c479-80c2-4e51caf83180" executionId="d492f578-47d0-4e5e-b86d-11dd5094cab3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d65a7516-b1e8-5e9d-df59-e53ef51813ce" executionId="91cee868-00d1-4127-9062-ca50f557cadb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d982732d-f4fa-75e6-915f-246d294c8c6f" executionId="4a851495-7b0e-4e05-b577-b776f5b02049" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="00fcb6b2-4352-bf5a-43cb-c5d182e621f8" executionId="967474f0-a852-4c50-a39e-9661b53da339" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87afea6e-a1b8-f0da-0ad3-36c8330eda7d" executionId="88afbbec-4a80-4cb4-b40a-28714e1b87d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.11)&#xD;
+[xUnit.net 00:00:00.07]   Discovering: Shouty.Specs&#xD;
+[xUnit.net 00:00:00.10]   Discovered:  Shouty.Specs&#xD;
+[xUnit.net 00:00:00.10]   Starting:    Shouty.Specs&#xD;
+-&gt; Loading plugin C:\Users\pfeniza\source\repos\Patpat141214\SpecFlow-Selenium\Shouty.Specs\bin\Debug\net8.0\CucumberExpressions.SpecFlow.SpecFlowPlugin.dll&#xD;
+-&gt; Loading plugin C:\Users\pfeniza\source\repos\Patpat141214\SpecFlow-Selenium\Shouty.Specs\bin\Debug\net8.0\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll&#xD;
+-&gt; Loading plugin C:\Users\pfeniza\source\repos\Patpat141214\SpecFlow-Selenium\Shouty.Specs\bin\Debug\net8.0\Shouty.Specs.dll&#xD;
+-&gt; Using specflow.json&#xD;
+Starting ChromeDriver 131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285}) on port 57590&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully on port 57590.&#xD;
+Starting ChromeDriver 131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285}) on port 57619&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully on port 57619.&#xD;
+[xUnit.net 00:00:15.11]   Finished:    Shouty.Specs&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
