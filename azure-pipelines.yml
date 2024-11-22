@@ -1,0 +1,44 @@
+trigger:
+- main  # Replace with your branch name
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+# Step 1: Install the correct .NET SDK version
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '8.0'  # Replace with your .NET Core version
+
+# Step 2: Restore NuGet packages
+- script: |
+    dotnet restore
+  displayName: 'Restore Dependencies'
+
+# Step 3: Build the project
+- script: |
+    dotnet build --configuration Release
+  displayName: 'Build Project'
+
+# Step 4: Run SpecFlow tests and generate a .trx file
+- script: |
+    dotnet test --logger:trx
+  displayName: 'Run Tests'
+
+# Step 5: Install SpecFlow.Plus.LivingDoc.CLI
+- script: |
+    dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
+  displayName: 'Install LivingDoc CLI'
+
+# Step 6: Generate the LivingDoc HTML report
+- script: |
+    livingdoc test-assembly bin/Debug/net6.0/MySpecFlowProject.Tests.dll -t TestResults/<timestamp>.trx
+  displayName: 'Generate LivingDoc Report'
+
+# Step 7: Publish the LivingDoc HTML report as an artifact
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(System.DefaultWorkingDirectory)/LivingDoc.html
+    artifactName: LivingDocReport
+  displayName: 'Publish LivingDoc Report'
