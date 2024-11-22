@@ -34,7 +34,7 @@ steps:
 
 # Step 6: Generate the LivingDoc HTML report
 - script: |
-    livingdoc test-assembly bin/Debug/net8.0/Shouty.Specs.dll -t TestResults/<timestamp>.trx
+    livingdoc test-assembly $(Build.SourcesDirectory)/bin/Debug/net8.0/Shouty.Specs.dll -t $(Build.ArtifactStagingDirectory)/TestResults/$(Build.BuildId).trx
   displayName: 'Generate LivingDoc Report'
 
 # Step 7: Publish the LivingDoc HTML report as an artifact
